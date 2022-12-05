@@ -2,7 +2,7 @@ import java.util.AbstractCollection;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-public class CalorieCounter extends AbstractSolution<Integer>
+public class CalorieCounter extends AbstractSolution
 {
 	private PriorityQueue<Integer> calories;
 	
@@ -12,9 +12,9 @@ public class CalorieCounter extends AbstractSolution<Integer>
 		calories = countCalories(super.lines()); 
 	}
 
-	public Integer solutionOne() { return calories.poll(); }
+	public int solutionOne() { return calories.poll(); }
 	
-	public Integer solutionTwo() { return calories.poll() + calories.poll() + calories.poll(); }
+	public int solutionTwo() { return calories.poll() + calories.poll() + calories.poll(); }
 		
 	private PriorityQueue<Integer> countCalories(AbstractCollection<String> lines)
 	{

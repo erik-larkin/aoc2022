@@ -1,4 +1,4 @@
-public class RockPaperScissorsScoreCalculator extends AbstractSolution<Integer>
+public class RockPaperScissorsScoreCalculator extends AbstractSolution
 {
 	private static final char ROCK = 'A';
 	private static final char PAPER = 'B';
@@ -19,9 +19,9 @@ public class RockPaperScissorsScoreCalculator extends AbstractSolution<Integer>
 		rounds = super.lines().toArray(String[]::new);
 	}	
 
-	public Integer solutionOne() { return getScoreForAllRounds(false); };
+	public int solutionOne() { return getScoreForAllRounds(false); };
 
-	public Integer solutionTwo() { return getScoreForAllRounds(true); };
+	public int solutionTwo() { return getScoreForAllRounds(true); };
 	
 	private int getScoreForAllRounds(boolean correctWay)
 	{

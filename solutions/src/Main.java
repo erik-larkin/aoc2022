@@ -3,7 +3,7 @@ public class Main
 	public static void main(String[] args)
 	{
 		int day = 2;
-		AbstractSolution<Integer> solution = getSolutionForDay(day);
+		AbstractSolution solution = getSolutionForDay(day);
 
 		if (solution != null)
 		{
@@ -16,7 +16,7 @@ public class Main
 			System.err.printf("No solution exists for day %d.%n", day);
 	}
 	
-	private static AbstractSolution<Integer> getSolutionForDay(int day)
+	private static AbstractSolution getSolutionForDay(int day)
 	{
 		switch (day)
 		{

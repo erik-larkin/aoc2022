@@ -1,6 +1,6 @@
 import java.util.AbstractCollection;
 
-public abstract class AbstractSolution<T>
+public abstract class AbstractSolution
 {
 	private AbstractCollection<String> lines;
 
@@ -13,7 +13,7 @@ public abstract class AbstractSolution<T>
 
 	public AbstractCollection<String> lines() { return lines; }
 
-	public abstract T solutionOne();
+	public abstract int solutionOne();
 
-	public abstract T solutionTwo();
+	public abstract int solutionTwo();
 }
