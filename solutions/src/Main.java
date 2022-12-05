@@ -2,15 +2,13 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		int day = 2;
+		int day = 3;
 		AbstractSolution solution = getSolutionForDay(day);
 
 		if (solution != null)
 		{
-			String answer = String.format("Part 1: %d%Part 2: %d%n", 	
-				solution.solutionOne(), solution.solutionTwo());
-
-			System.out.println(answer);	
+			System.out.printf("Part 1: %d%nPart 2: %d%n", 	
+				solution.solutionOne(), solution.solutionTwo());	
 		}
 		else
 			System.err.printf("No solution exists for day %d.%n", day);
@@ -22,6 +20,7 @@ public class Main
 		{
 			case 1: return new CalorieCounter();
 			case 2: return new RockPaperScissorsScoreCalculator();
+			case 3: return new RucksackPrioritiser();
 			default: return null;
 		}
 	}
